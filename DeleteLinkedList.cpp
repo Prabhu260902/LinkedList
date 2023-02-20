@@ -50,14 +50,14 @@ public:
 
 
 	void deleteMiddle(){
-			Node* ptr=NULL,*slow=head,*fast=head;
-			while(fast!=NULL and fast->next!=NULL){
-				ptr=slow;
-				slow=slow->next;
-				fast=fast->next->next;
-			}
-			ptr->next=ptr->next->next;
+		Node* ptr=NULL,*slow=head,*fast=head;
+		while(fast!=NULL and fast->next!=NULL){
+			ptr=slow;
+			slow=slow->next;
+			fast=fast->next->next;
 		}
+		ptr->next=ptr->next->next;
+	}
 
 
 
